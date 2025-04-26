@@ -8,7 +8,8 @@
     "start": "npx eleventy --serve",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
-    "clean": "rm -r dist"
+    "clean": "rm -r dist",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/cce-fgsa-website/"
   },
   "repository": {
     "type": "git",
