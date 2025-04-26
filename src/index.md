@@ -1,7 +1,9 @@
 ---
-title: '11ty init test'
-layout: 'layouts/home.html'
+tags: 'pages'
+title: 'First Generation Student Alliance'
+tabtitle: 'Home | FGSA'
+navtitle: 'Home'
+layout: 'layouts/page.html'
 ---
-## This is a test to see if I can set up an 11ty project properly.
 
-Hello world or something idk
+This is a website for the first-generation student alliance at UCSD!
