@@ -9,7 +9,7 @@ This project is currently being hosted on https://fgsa-ucsd.netlify.app, so feel
 - **Nunjucks**: Templating language.
 - Probably not much more than that (if anything), because that would be silly overkill.
 
-Yeah I know, even 11ty and Nunjucks is overkill for a simple static website like this, but I wanted to learn a new thing, okay?
+(Yeah ik even 11ty and Nunjucks is overkill for a simple static website like this, but I wanted to learn some new stuff)
 
 ## 📋 Local Commands
 - `npm run start`: Builds and serves the website on a port (typically 8080).
