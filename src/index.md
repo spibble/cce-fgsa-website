@@ -3,6 +3,7 @@ tags: 'pages'
 title: 'First Generation Student Alliance'
 tabtitle: 'Home | FGSA'
 navtitle: 'Home'
+order: 1
 layout: 'layouts/page.html'
 ---
 
