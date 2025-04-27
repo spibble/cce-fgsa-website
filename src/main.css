@@ -13,29 +13,37 @@ body {
     padding: 0;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     overflow: hidden;
     background-color: #333434;
 }
 
 li {
-    float: left;
+    float: right;
     padding: 1em;
+    transition: 0.3s;
+}
+
+li a {
+    color: darkgray;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 li:hover {
     background-color: #666767;
 }
 
-li a {
+li:hover a {
     color: white;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
 }
+
 
 h1, p {
     margin-left: 2rem;

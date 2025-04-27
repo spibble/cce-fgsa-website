@@ -8,7 +8,7 @@
     </li>
     !-->
 
-    {% for page in collections.pages | sort(attribute='data.order') %}
+    {% for page in collections.pages | sort(attribute='data.order') | reverse %}
     <li>
       <a 
         {% if currentUrl === page.url %}aria-current="page"{% endif %} 
