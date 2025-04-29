@@ -13,6 +13,10 @@ body {
     padding: 0;
 }
 
+.preload {
+    transition: none !important;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -44,15 +48,15 @@ li:hover a {
     color: white;
 }
 
+article {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
 h1 {
     font-size: 3rem;
 }
 
 p {
     font-size: 1.3rem;
-}
-
-#body-content {
-    margin-left: 10rem;
-    margin-right: 10rem;
 }

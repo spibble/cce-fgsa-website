@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="/main.css">
 		<title>{{ tabtitle }}</title>
 	</head>
-	<body>
+	<body class="preload">
 		{% include "layouts/nav.njk" %}
 		{% block content %}
 			<p>
@@ -15,3 +15,9 @@
 		{% endblock %}
 	</body>
 </html>
+
+<script>
+	$(window).load(function() {
+		$("body").removeClass("preload");
+	});
+</script>
