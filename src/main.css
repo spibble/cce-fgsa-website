@@ -26,14 +26,14 @@ nav ul {
 li {
     float: right;
     padding: 1em;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 li a {
     color: darkgray;
     text-decoration: none;
     display: inline-block;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 li:hover {
@@ -44,12 +44,15 @@ li:hover a {
     color: white;
 }
 
-
-h1, p {
-    margin-left: 2rem;
-    margin-right: 2rem;
+h1 {
+    font-size: 3rem;
 }
 
-h1 {
-    font-size: 2rem;
+p {
+    font-size: 1.3rem;
+}
+
+#body-content {
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
