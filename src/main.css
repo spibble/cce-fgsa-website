@@ -17,40 +17,72 @@ body {
     transition: none !important;
 }
 
-nav ul {
-    list-style-type: none;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
     margin: 0;
     padding: 0;
-    padding-left: 0;
-    padding-right: 0;
     overflow: hidden;
     background-color: #333434;
 }
 
-li {
-    float: right;
+nav img {
+    max-height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 1.1em;
     padding: 1em;
+    float: right;
+    height: 100%;
     transition: background-color 0.3s;
 }
 
-li a {
+nav li a {
+    height: 100%;
     color: darkgray;
     text-decoration: none;
     display: inline-block;
     transition: color 0.3s;
 }
 
-li:hover {
+nav li:hover {
     background-color: #666767;
 }
 
-li:hover a {
+nav li:hover a {
     color: white;
 }
+
+@keyframes loadContent {
+    0% {
+        opacity: 0%;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+} 
 
 article {
     margin-left: 10rem;
     margin-right: 10rem;
+    padding-top: 3rem;
+    animation: 0.5s ease-out 0s 1 loadContent;
 }
 
 h1 {
