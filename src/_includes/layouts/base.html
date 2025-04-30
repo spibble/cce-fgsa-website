@@ -7,7 +7,10 @@
 		<title>{{ tabtitle }}</title>
 	</head>
 	<body class="preload">
-		{% include "layouts/nav.njk" %}
+		<header>
+			<img src="../assets/temp.jpg" alt="FGSA logo">
+			{% include "layouts/nav.njk" %}
+		</header>
 		{% block content %}
 			<p>
 			Placeholder text.

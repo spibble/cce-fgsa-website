@@ -1,22 +1,12 @@
 {% set currentUrl %}{{ page.url }}{% endset %}
-
-<nav>
-  <img src="../assets/temp.jpg" alt="FGSA logo">
-  <ul role="list">
-    <!-- Use if pages get refactored into a different subdirectory
-    <li>
-      <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
-    </li>
-    !-->
-
-    {% for page in collections.pages | sort(attribute='data.order') | reverse %}
-    <li>
-      <a 
-        {% if currentUrl === page.url %}aria-current="page"{% endif %} 
-        href="{{ page.url }}">
-          {{ page.data.navtitle }}
-      </a>
-    </li>
-    {%- endfor %}
-  </ul>
-</nav>
+      <nav>
+        <ul role="list">
+          {% for page in collections.pages | sort(attribute='data.order') %}
+          <li>
+            <a {% if currentUrl === page.url %} aria-current="page"{% endif %} href="{{ page.url }}">
+              {{- page.data.navtitle.trim() -}}
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+      </nav>

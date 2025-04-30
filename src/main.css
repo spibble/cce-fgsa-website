@@ -3,6 +3,10 @@
     font-family: base_font
 }
 
+div {
+    border: 1px solid red;
+}
+
 @font-face {
     font-family: base_font;
     src: url(https://code.cdn.mozilla.net/fonts/woff/FiraSans-Regular.woff)
@@ -13,54 +17,59 @@ body {
     padding: 0;
 }
 
-.preload {
+body.preload {
     transition: none !important;
 }
 
-nav {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
-    width: 100%;
+
     height: 60px;
+    width: 100%;
+
     margin: 0;
     padding: 0;
-    overflow: hidden;
+
     background-color: #333434;
 }
 
-nav img {
+header img {
     max-height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
     margin: 0;
     padding: 0;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav li {
-    font-size: 1.1em;
+    display: inline;
     padding: 1em;
-    float: right;
+
+    font-size: 1em;
     height: 100%;
     transition: background-color 0.3s;
 }
 
-nav li a {
-    height: 100%;
-    color: darkgray;
-    text-decoration: none;
-    display: inline-block;
-    transition: color 0.3s;
-}
-
 nav li:hover {
     background-color: #666767;
+}
+
+nav li a {
+    text-decoration: none;
+
+    color: darkgray;
+    
+    transition: color 0.3s;
 }
 
 nav li:hover a {
