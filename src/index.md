@@ -4,7 +4,7 @@ title: 'First Generation Student Alliance'
 tabtitle: 'Home | FGSA'
 navtitle: 'Home'
 order: 1
-layout: 'layouts/page.njk'
+layout: 'layouts/home.njk'
 ---
 
 This is a website for the first-generation student alliance at UCSD!

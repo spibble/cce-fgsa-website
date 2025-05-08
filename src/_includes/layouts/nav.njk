@@ -4,7 +4,7 @@
           {% for page in collections.pages | sort(attribute='data.order') %}
           <li>
             <a {% if currentUrl === page.url %} aria-current="page"{% endif %} href="{{ page.url }}">
-              {{- page.data.navtitle.trim() -}}
+              <b>{{ page.data.navtitle.toUpperCase() }}</b>
             </a>
           </li>
           {%- endfor %}
