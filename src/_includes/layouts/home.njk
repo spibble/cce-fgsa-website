@@ -1,13 +1,15 @@
 {% extends "layouts/base.html" %}
 {% block content %}
 
-<section class="img-spread">
-</section>
+        <section class="img-spread">
+        </section>
 
-<article>
-	<h1>{{ title }}</h1> 
-	{{ content | safe }}
-</article>
+        <section>
+            <article>
+                <h1>{{ title }}</h1> 
+                {{ content | safe }}
+            </article>
+        </section>
 
 {% endblock %}
 
