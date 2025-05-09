@@ -14,7 +14,7 @@ body {
     background-color: #2B3980;
 }
 
-div.debug {
+.debug {
     border: 1px solid red;
 }
 
@@ -142,13 +142,14 @@ p {
 section {
     padding: 0;
     margin: 0;
-    background-color: #E3E2DD;
+    background-color: #f4f3ef;
 }
 
 .img-spread {
     background-image: url("/assets/comm_banner.jpg");
     background-size: cover;
     background-position: center;
+    filter: brightness(70%) contrast(120%);
 
     height: 1500px; 
     max-height: 100svh;
