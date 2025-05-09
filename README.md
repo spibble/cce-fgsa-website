@@ -2,7 +2,7 @@
 A website for the First Generation Student Alliance club at UCSD made for the second Core Assignment of CCE 3.
 
 ## 
-This project is currently being hosted on https://fgsa-ucsd.netlify.app, so feel free to pay it a visit if you wanna see how it's looking so far!
+This project is currently being hosted on https://fgsa-at-ucsd.netlify.app, so feel free to pay it a visit if you wanna see how it's looking so far!
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/df62fd8d-1039-4669-b6cf-d3344d43da5d/deploy-status)](https://app.netlify.com/sites/fgsa-at-ucsd/deploys)
 
