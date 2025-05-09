@@ -3,9 +3,7 @@
         <ul role="list">
           {% for page in collections.pages | sort(attribute='data.order') %}
           <li>
-            <a {% if currentUrl === page.url %} aria-current="page"{% endif %} href="{{ page.url }}">
-              <b>{{ page.data.navtitle.toUpperCase() }}</b>
-            </a>
+            <a{% if currentUrl === page.url %} aria-current="page"{% endif %} href="{{ page.url }}">{{ page.data.navtitle.toUpperCase() }}</a>
           </li>
           {%- endfor %}
         </ul>
