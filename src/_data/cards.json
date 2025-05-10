@@ -3,28 +3,28 @@
         "title": "Our Mission",
         "description": "Learn what we're all about!",
         "icon": "fa-users-viewfinder",
-        "buttonUrl": "/about/",
+        "buttonUrl": "/pages/about/",
         "buttonText": "Learn More"
     },
     {
         "title": "Our Events",
         "description": "See what's coming up this quarter.",
         "icon": "fa-calendar-days",
-        "buttonUrl": "/events/",
+        "buttonUrl": "/pages/events/",
         "buttonText": "Upcoming Events"
     },
     {
         "title": "Get in Touch",
         "description": "Want to join us, or collaborate?",
         "icon": "fa-envelope-open-text",
-        "buttonUrl": "/contact/",
+        "buttonUrl": "/pages/contact/",
         "buttonText": "Contacts & Socials"
     },
     {
         "title": "Questions?",
         "description": "We have answers.",
         "icon": "fa-circle-question",
-        "buttonUrl": "/faq/",
+        "buttonUrl": "/pages/faq/",
         "buttonText": "View our FAQ"
     }
 ]
