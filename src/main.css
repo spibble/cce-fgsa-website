@@ -250,6 +250,57 @@ section {
     }
 }
 
+.card-grid {
+    display: flex;
+    min-height: 15vw;
+    max-height: 25vw;
+    padding: 1rem;
+}
+
+.card {
+    width: 25vw;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.card-body {
+    padding: 2rem;
+    min-height: 5vw;
+}
+
+.card h2 {
+    font-size: 2rem;
+}
+
+.card i {
+    font-size: 4rem;
+}
+
+a.button {
+    background-color: #2B3980;
+    color: #E3E2DD;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 0 20px;
+    
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 2rem;
+
+    transition: 0.3s;
+    transition-property: background-color, color;
+}
+
+a.button:hover {
+    background-color: #4657ad;
+    color: white;
+}
+
+
 footer {
     text-align: center;
 
@@ -261,6 +312,8 @@ footer {
 
     color: #E3E2DD;
     background-color: #2B3980;
+
+    position: relative;
 }
 
 footer p {

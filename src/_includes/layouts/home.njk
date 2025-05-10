@@ -8,16 +8,21 @@
                 <p class="splash-p3">at UC San Diego.</p>
 
                 <a class="button splash-b1" href="about/">Learn More</a>
-                <a class="button splash-b2" href="events/">Our Events</a>
+                <!-- <a class="button splash-b2" href="events/">Our Events</a> -->
             </div>
         </section>
 
-        <section>
-            <article>
-                <h1>{{ title }}</h1> 
-                {{ content | safe }}
-            </article>
+        <section class="card-grid">
+            {% for card in cards %}
+                {% set title = card.title %}
+                {% set description = card.description %}
+                {% set icon = card.icon %}
+                {% set image = card.image %}
+                {% set buttonUrl = card.buttonUrl %}
+                {% set buttonText = card.buttonText %}
+                {% set alt = card.alt %}
+                {% include "card.njk" %}
+            {% endfor %}
         </section>
-
 {% endblock %}
 
