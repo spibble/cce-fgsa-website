@@ -145,12 +145,12 @@ section {
     background-color: #f4f3ef;
 }
 
-.img-spread {
+.splash-img {
     background-image: url("/assets/comm_banner.jpg");
     background-size: cover;
     background-position: center;
-    filter: brightness(70%) contrast(120%);
-
+    filter: brightness(90%);
+    
     height: 1500px; 
     max-height: 100svh;
     width: 100vw;
@@ -158,10 +158,94 @@ section {
     margin: 0;
     padding: 0;
 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
 
     position: relative;
     top: 0;
     z-index: 10;
+}
+
+.splash-text {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.splash-text p {
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+}
+
+.splash-text span {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: auto;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+}
+
+.splash-text a.button {
+    background-color: #2B3980;
+    color: #E3E2DD;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 0 20px;
+    
+    padding: 1rem;
+    font-weight: bold;
+
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 2rem;
+
+    transition: 0.3s;
+    transition-property: background-color, color;
+}
+
+.splash-text a.button:hover {
+    background-color: #4657ad;
+    color: white;
+}
+
+.splash-p1, .splash-p2, .splash-p3, .splash-b1, .splash-b2 {
+    opacity: 0;
+    animation: splashText 0.7s forwards;
+    animation-fill-mode: forwards;
+    transform: translateZ(0);
+}
+
+.splash-p1 {
+    animation-delay: 0.5s;
+}
+
+.splash-p2 {
+    display: inline-block;
+    animation-delay: 0.7s;
+}
+
+.splash-p3 {
+    animation-delay: 0.9s;
+}
+
+.splash-b1 {
+    display: inline-block;
+    animation-delay: 2s;
+}
+.splash-b2 {
+    display: inline-block;
+    animation-delay: 2.7s;
+}
+
+@keyframes splashText {
+    0% {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
 }
 
 footer {
