@@ -3,6 +3,6 @@ tags: 'pages'
 title: 'Frequently Asked Questions'
 tabtitle: 'FAQ | FGSA'
 navtitle: 'FAQ'
-order: 4
+order: 5
 layout: 'layouts/page.njk'
 ---

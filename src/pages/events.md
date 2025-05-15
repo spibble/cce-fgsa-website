@@ -3,6 +3,6 @@ tags: 'pages'
 title: 'Upcoming Events'
 tabtitle: 'Events | FGSA'
 navtitle: 'Events'
-order: 3
+order: 4
 layout: 'layouts/page.njk'
 ---
