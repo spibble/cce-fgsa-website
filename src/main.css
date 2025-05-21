@@ -330,6 +330,11 @@ a.button:hover {
         font-size: 1rem;
         padding: 0.75rem 1rem;
     }
+
+    article {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
 
 footer {
@@ -345,8 +350,50 @@ footer {
     background-color: #2B3980;
 
     position: relative;
+
 }
 
 footer p {
     font-size: 1rem;
+}
+
+nav.base ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav.base ul li {
+    display: inline-block;
+}
+nav.base ul li a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav.base ul li {
+        display: none;
+    }
+
+    nav.base ul li:last-child {
+        display: inline-block;
+    }
+    nav.base ul li:last-child {
+        float: right;
+    }
+    nav.base ul li a.icon {
+        display: inline-block;
+    }
+}
+
+nav.base.responsive ul li {
+    display: block;
+    width: 100%;
+    text-align: left;
+    float: none;
+}
+
+nav.base.responsive ul li:last-child a.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
