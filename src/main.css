@@ -169,6 +169,33 @@ section {
     z-index: 10;
 }
 
+.upcoming-events {
+    position: relative;
+    padding-top: 60px;
+    padding-left: 10rem;
+}
+
+.event-calendar {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    z-index: 10;
+}
+
+.styled-calendar-container {
+    position: static;
+}
+
+.past-events {
+    position: relative;
+    top: 0px;
+}
+
+.generic-events {
+    position: relative;
+}
+
+
 .splash-text {
     color: white;
     text-align: center;

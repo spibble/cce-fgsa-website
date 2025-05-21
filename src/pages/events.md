@@ -4,5 +4,5 @@ title: 'Upcoming Events'
 tabtitle: 'Events | FGSA'
 navtitle: 'Events'
 order: 4
-layout: 'layouts/page.njk'
+layout: 'layouts/events.njk'
 ---
