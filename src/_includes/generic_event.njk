@@ -1,0 +1,8 @@
+        <div class="event">
+            <div class="event-description">
+                <h2>{{ title }}</h2>
+                <p>{{ description }}</p>
+            </div>
+
+            <img src="{{ image or '/assets/temp.png' }}" alt="{{ alt | default('Card image') }}">
+        </div>

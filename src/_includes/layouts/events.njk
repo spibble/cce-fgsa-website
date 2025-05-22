@@ -1,0 +1,45 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+        <section class="upcoming-events">
+            <h1>Upcoming Events</h1>
+            <div class="event-calendar">
+                <iframe 
+                    src="https://embed.styledcalendar.com/#o2wygZUuAe8nSk3svQ39" 
+                    title="FGSA Event Calendar" 
+                    class="styled-calendar-container" 
+                    style="width: 80%; height: 660px; border: none;" 
+                    data-cy="calendar-embed-iframe"
+                ></iframe>
+            <div>
+        </section>
+
+        <section class="past-events">
+            <article>
+                <h1>Past Events</h1>
+                {% for event in past_events %}
+                    {% set title = event.title %}
+                    {% set description = event.description %}
+                    {% set image = event.image %}
+                    {% include "past_event.njk" %}
+                {% endfor %}
+            </article>
+        </section>
+
+        <section class="generic-events">
+            <article>
+                <h1>Typical Events</h1>
+                {% for event in generic_events %}
+                    {% set title = event.title %}
+                    {% set description = event.description %}
+                    {% set image = event.image %}
+                    {% include "generic_event.njk" %}
+                {% endfor %}
+            </article>
+        </section>
+{% endblock %}
+
+<!-- Code -->
+<script>
+    async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js">
+</script>
