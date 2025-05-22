@@ -11,9 +11,8 @@ This project is currently being hosted on https://fgsa-at-ucsd.netlify.app, so f
 | Tech | Purpose |
 |------|---------|
 | Eleventy (11ty) | Static site generation |
-| Nunjucks        | Templating language |
-| Markdown        | Content language |
-| Raw CSS/JS      | Styling and user interaction |
+| Nunjucks/JSON   | Templating and data storage |
+| Raw CSS/JS      | Styling, responsiveness, user interaction |
 | Netlify         | Remote site hosting |
 
 
