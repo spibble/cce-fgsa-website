@@ -1,17 +1,17 @@
 [
     {
-        "title": "General Body Meetings (GBMS)",
-        "description": "description",
-        "image": "fa-users-viewfinder"
+        "title": "General Body Meetings (GBMs)",
+        "description": "These events are held a few times a quarter and serve to update members on what's currently going on; these are great opportunities to get involved and learn more about the organization. Plus, there are usually fun activities planned, so feel free to just get together and hang out!",
+        "image": null
     },
-{
+    {
         "title": "Mixers & Socials",
-        "description": "description",
-        "image": "fa-users-viewfinder"
+        "description": "The aim of these events are to provide a space for fostering community, whether that's among students (at socials) or with first-gen faculty, staff, and industry professionals (mixers).",
+        "image": null
     },
-{
+    {
         "title": "First-Gen Fridays",
-        "description": "description",
-        "image": "fa-users-viewfinder"
+        "description": "A weekly engagement opportunity, such as a meal, social gathering, or a place to study together. Come out and get to meet new people! Food is typically provided during these events.",
+        "image": null
     }
 ]

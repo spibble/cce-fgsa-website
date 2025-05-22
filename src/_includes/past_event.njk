@@ -1,12 +1,8 @@
-        <div class="card">
-            <i class="fa-solid {{ icon }}"></i>
-            <!-- <img src="{{ image }}" alt="{{ alt | default('Card image') }}"> -->
-            <div class="card-body">
+        <div class="event">
+            <div class="event-description">
                 <h2>{{ title }}</h2>
                 <p>{{ description }}</p>
             </div>
 
-            {% if buttonUrl and buttonText %}
-            <a href="{{ buttonUrl }}" class="button">{{ buttonText }}</a>
-            {% endif %}
+            <img src="{{ image or '/assets/temp.png' }}" alt="{{ alt | default('Card image') }}">
         </div>
