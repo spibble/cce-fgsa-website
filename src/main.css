@@ -361,6 +361,24 @@ a.button:hover {
         font-size: 1rem;
         padding: 0.75rem 1rem;
     }
+
+    .event {
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+        display: block;
+        max-width: 80vw;
+    }
+
+    .past-events {
+        margin: 0;
+        padding: 0;
+    }
+
+    article {
+        max-width: 100%;
+        margin: 1rem;
+    }
 }
 
 .event {
