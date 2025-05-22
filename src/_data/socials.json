@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Instagram",
+        "description": "Our main social media for advertising upcoming events and updates!",
+        "icon": "fa-brands fa-instagram",
+        "buttonUrl": "https://www.instagram.com/ucsdfgsa/",
+        "buttonText": "@ucsdfgsa"
+    },
+    {
+        "title": "Discord",
+        "description": "Our main communcation platform to share event resources and share thoughts.",
+        "icon": "fa-brands fa-discord",
+        "buttonUrl": "https://discord.gg/c8R3RXeP",
+        "buttonText": "Join the Discord"
+    }
+]

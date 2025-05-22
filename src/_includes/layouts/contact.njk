@@ -1,0 +1,40 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+        <section class="socials">
+            <h1>Contact Us</h1>
+            <p>If you want the most up-to-date information, we're currently active on the following socials:</p>
+            <section class="card-grid">
+                {% for social in socials %}
+                    {% set title = social.title %}
+                    {% set description = social.description %}
+                    {% set icon = social.icon %}
+                    {% set buttonUrl = social.buttonUrl %}
+                    {% set buttonText = social.buttonText %}
+                    {% set alt = social.alt %}
+                    {% include "card.njk" %}
+                {% endfor %}
+            </section>
+        </section>
+
+        <section class="contact end">
+            <p>
+                If you'd like to reach out more formally to suggest ideas, voice concerns, or collaborate, 
+                you can send us an email at fgsa@ucsd.edu, or
+                you can also get in touch with us through here!
+                (This will still route your message to our email, but it just provides the opportunity to be anonymous, if you'd like.)
+            </p>
+
+            <form onsubmit="alert('Thanks for reaching out!');">
+                <label for="name">Name/Group/Organization:</label><br>
+                <input type="text" id="name" name="name" class="text-input" placeholder='e.g. "FGSA @ UCSD"'><br>
+                <label for="subject">Topic/Subject:</label><br>
+                <input type="text" id="subject" name="subject" class="text-input" placeholder='e.g. "Request to collaborate with..."'><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="80" placeholder="Leave your message here..."></textarea><br>
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </section>
+
+{% endblock %}
+
