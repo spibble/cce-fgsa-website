@@ -1,0 +1,17 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+        <section class="faq">
+            <article>
+                <h1>Frequently Asked Questions</h1>
+            </article>
+            
+                {% for q in questions %}
+                    {% set title = q.question %}
+                    {% set description = q.answer %}
+                    {% include "question.njk" %}
+                {% endfor %}
+        </section>
+
+{% endblock %}
+

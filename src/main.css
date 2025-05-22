@@ -403,6 +403,16 @@ a.button:hover {
     max-height: 100px;
 }
 
+.question {
+    max-width: 60vw;
+    margin: auto;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
 
 footer {
     text-align: center;
