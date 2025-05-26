@@ -1,3 +1,10 @@
+---
+tags: 'pages'
+title: 'Upcoming Events'
+tabtitle: 'Events | FGSA'
+navtitle: 'Events'
+order: 4
+---
 {% extends "layouts/base.html" %}
 {% block content %}
 
@@ -21,7 +28,7 @@
                     {% set title = event.title %}
                     {% set description = event.description %}
                     {% set image = event.image %}
-                    {% include "past_event.njk" %}
+                    {% include "components/event.njk" %}
                 {% endfor %}
             </article>
         </section>
@@ -33,7 +40,7 @@
                     {% set title = event.title %}
                     {% set description = event.description %}
                     {% set image = event.image %}
-                    {% include "generic_event.njk" %}
+                    {% include "components/event.njk" %}
                 {% endfor %}
             </article>
         </section>

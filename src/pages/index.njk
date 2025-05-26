@@ -1,3 +1,11 @@
+---
+tags: 'pages'
+title: 'First Generation Student Alliance'
+tabtitle: 'Home | FGSA'
+navtitle: 'Home'
+order: 1
+permalink: 'index.html'
+---
 {% extends "layouts/base.html" %}
 {% block content %}
 
@@ -8,7 +16,6 @@
                 <p class="splash-p3">at UC San Diego.</p>
 
                 <a class="button splash-b1" href="about/">Learn More</a>
-                <!-- <a class="button splash-b2" href="events/">Our Events</a> -->
             </div>
         </section>
 
@@ -21,7 +28,7 @@
                 {% set buttonUrl = feature.buttonUrl %}
                 {% set buttonText = feature.buttonText %}
                 {% set alt = feature.alt %}
-                {% include "tile.njk" %}
+                {% include "components/tile.njk" %}
             {% endfor %}
         </section>
 {% endblock %}
