@@ -1,19 +1,20 @@
 # cce-fgsa-website
 A (mock) website for the First Generation Student Alliance club at UCSD. This specifically serves the purpose of being a collaborative text example under the website genre for Core Assignment 2 of CCE 3.
 
-## 🌐 How to Visit
+## 🌐 Visit
 This project is currently being hosted on https://fgsa-at-ucsd.netlify.app, so feel free to pay it a visit if you wanna see how it's looking so far!
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/df62fd8d-1039-4669-b6cf-d3344d43da5d/deploy-status)](https://app.netlify.com/sites/fgsa-at-ucsd/deploys)
 
 ## 🛠️ Technologies
 
-| Tech | Purpose |
-|------|---------|
-| Eleventy (11ty) | Static site generation |
-| Nunjucks/JSON   | Templating and data storage |
-| Raw CSS/JS      | Styling, responsiveness, user interaction |
-| Netlify         | Remote site hosting |
+| Tech            | Purpose                  |
+|-----------------|--------------------------|
+| Eleventy (11ty) | Static site generation   | 
+| Nunjucks/JSON   | Templating/data language |
+| CSS/SCSS        | Styling language         |
+| JavaScript (JS) | Some responsiveness/UI   |
+| Netlify         | Remote site hosting      |
 
 
 ## 📋 Local Commands
