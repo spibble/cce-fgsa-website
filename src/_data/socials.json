@@ -12,5 +12,12 @@
         "icon": "fa-brands fa-discord",
         "buttonUrl": "https://discord.gg/c8R3RXeP",
         "buttonText": "Join the Discord"
+    },
+    {
+        "title": "Email",
+        "description": "Our official email for more formal communication and collaborations.",
+        "icon": "fa-solid fa-envelope",
+        "buttonUrl": "mailto:placeholder",
+        "buttonText": "fgsa@ucsd.edu"
     }
 ]

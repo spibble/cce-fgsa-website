@@ -13,15 +13,15 @@
         </section>
 
         <section class="card-grid">
-            {% for card in cards %}
-                {% set title = card.title %}
-                {% set description = card.description %}
-                {% set icon = card.icon %}
-                {% set image = card.image %}
-                {% set buttonUrl = card.buttonUrl %}
-                {% set buttonText = card.buttonText %}
-                {% set alt = card.alt %}
-                {% include "card.njk" %}
+            {% for feature in features %}
+                {% set title = feature.title %}
+                {% set description = feature.description %}
+                {% set icon = feature.icon %}
+                {% set image = feature.image %}
+                {% set buttonUrl = feature.buttonUrl %}
+                {% set buttonText = feature.buttonText %}
+                {% set alt = feature.alt %}
+                {% include "tile.njk" %}
             {% endfor %}
         </section>
 {% endblock %}
