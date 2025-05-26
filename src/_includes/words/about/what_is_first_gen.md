@@ -1,0 +1,3 @@
+## What does "first-generation" mean?
+
+First-generation is an identity, and a quite complex one at that. In its most simple form, being first-generation means you are the first in your family to do something. In higher education it's often used to refer to first-generation college students or first-generation international students, those of whom often experience the most challenges in adjusting to college life. However, you can also be first-generation in your major, field, academia, etc. - there are plenty of other first-generation identities which don't often get talked about. We'd like to highlight the following question from [our FAQ](/faq/):

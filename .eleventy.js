@@ -1,9 +1,16 @@
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/main.css");
-  eleventyConfig.addPassthroughCopy("./src/assets");
+module.exports = function (config) {
+  config.addPassthroughCopy("./src/main.css");
+  config.addPassthroughCopy("./src/assets");
+
+  config.addFilter('markdown', function(value) {
+    let markdown = require('markdown-it')({
+        html: true
+    });
+    return markdown.render(value);
+  });
 
   return {
-    markdownTemplateEngine: 'njk',
+    markdownTemplateEngine: "njk",
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
 

@@ -157,6 +157,14 @@ section {
     background-color: #f4f3ef;
 }
 
+.top {
+    padding-top: 60px;
+}
+
+section.faq {
+    padding-top: 60px;
+}
+
 .contact.end {
     padding-bottom: 2rem;
 }
@@ -470,7 +478,8 @@ a.button:hover {
     max-width: 60vw;
     margin: auto;
     border: 0px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -488,7 +497,8 @@ a.button:hover {
     max-width: 60vw;
     margin: auto;
     border: 0px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);

@@ -1,0 +1,40 @@
+---
+tags: 'pages'
+title: 'About Us'
+tabtitle: 'About | FGSA'
+navtitle: 'About'
+order: 2
+layout: 'layouts/page.njk'
+---
+
+{% set about_mission %}{% include 'words/about/about_mission.md' %}{% endset %}
+{% set what_is_first_gen %}{% include 'words/about/what_is_first_gen.md' %}{% endset %}
+{% set experiences %}{% include 'words/about/experiences.md' %}{% endset %}
+{% set core_values %}{% include 'words/about/core_values.md' %}{% endset %}
+
+{% block content %}
+
+        {{ about_mission | markdown | safe }}
+
+        {{ what_is_first_gen | markdown | safe }}
+
+        {% for q in questions %}
+            {% if q.question === "How do I know I am a first-generation student?" %}
+                {% set title = q.question %}
+                {% set description = q.answer %}
+                {% include "components/question.njk" %}
+            {% endif %}
+        {% endfor %}
+
+        {{ experiences | markdown | safe }}
+
+        {% for e in experience %}
+            {% set title = '"' + e.experience + '"' %}
+            {% set description = "- " + e.name %}
+            {% set image = e.image %}
+            {% include "components/card.njk" %}
+        {% endfor %}
+
+        {{ core_values | markdown | safe }}
+
+{% endblock %}

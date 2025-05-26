@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Lylian Garcia",
+        "experience": "Being first gen means accomplishing what was once impossible for my parents who didn't have the opportunity to pursue higher education and turning a dream into a reality.",
+        "image": "/assets/board/lylian.png"
+    },
+    {
+        "name": "Shanell Rincon",
+        "experience": "Being first-gen to me means being able to share my story of how I got to where I am today. It's serving as representation and encouraging others so that they can be the first too.",
+        "image": "/assets/board/shanell.png"
+    },
+    {
+        "name": "America Armenta",
+        "experience": "To me being a first-generation college student means being blessed with opportunity to represent my family and community in new spaces, such as a college institution.",
+        "image": "/assets/board/america.png"
+    },
+    {
+        "name": "Sebastian Lomeli",
+        "experience": "Being first-gen means I'm carving my own path, taking on challenges my family didn't face, but also honoring their sacrifices by working hard to create a better future.",
+        "image": "/assets/board/sebastian.png"
+    }
+]
