@@ -136,12 +136,23 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 p {
     font-size: 1.3rem;
 }
 
 section {
     padding-top: 2rem;
+    padding-bottom: 2rem;
     margin: 0;
     background-color: #f4f3ef;
 }
@@ -329,9 +340,17 @@ section article {
     padding-bottom: 3rem;
 }
 
+.event.last {
+    margin-bottom: 2rem;
+}
+
 .card-body {
-    padding: 2rem;
+    padding: 1rem;
     min-height: 5vw;
+}
+
+.card img {
+    max-height: 200px;
 }
 
 .card h2 {
@@ -436,6 +455,10 @@ a.button:hover {
     article {
         max-width: 100%;
         margin: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
 

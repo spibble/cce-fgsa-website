@@ -1,0 +1,12 @@
+        <div class="card">
+            <img src="{{ image or '/assets/temp.png' }}">
+            <div class="card-body">
+                <h2>{{ name }}</h2>
+                <h3>{{ position }}</h3>
+                <p>{{ major }} at {{ college }} College</p>
+            </div>
+
+            {% if buttonUrl and buttonText %}
+            <a href="{{ buttonUrl }}" class="button">{{ buttonText }}</a>
+            {% endif %}
+        </div>

@@ -9,4 +9,18 @@ order: 3
 {% extends "layouts/base.html" %}
 {% block content %}
 
+        <section class="socials">
+            <h1>Board Members</h1>
+            <section class="card-grid">
+                {% for member in board %}
+                    {% set name = member.name %}
+                    {% set position = member.position %}
+                    {% set college = member.college %}
+                    {% set major = member.major %}
+                    {% set image = member.image %}
+                    {% include "components/board_member.njk" %}
+                {% endfor %}
+            </section>
+        </section>
+
 {% endblock %}

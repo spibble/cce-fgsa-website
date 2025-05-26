@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Lylian Garcia",
+        "position": "Co-President",
+        "college": "Eighth",
+        "major": "Undeclared-Physical Sciences",
+        "image": "/assets/board/lylian.png"
+    },
+    {
+        "name": "Michelle Tran",
+        "position": "Co-President",
+        "college": "Sixth",
+        "major": "Bioengineering",
+        "image": "/assets/board/michelle.png"
+    },
+    {
+        "name": "Rosalyn Contreras",
+        "position": "Vice President",
+        "college": "Eighth",
+        "major": "Public Health & Psychology",
+        "image": "/assets/board/rosalyn.png"
+    },
+    {
+        "name": "Linh Le",
+        "position": "Secretary",
+        "college": "Seventh",
+        "major": "Pharmacological Chemistry",
+        "image": "/assets/board/linh.png"
+    },
+    {
+        "name": "Yaling",
+        "position": "Treasurer",
+        "college": "Eighth",
+        "major": "Business Economics",
+        "image": "/assets/board/yaling.png"
+    },
+    {
+        "name": "Vanessa",
+        "position": "Co-Social Chair",
+        "college": "Muir",
+        "major": "Global Health",
+        "image": "/assets/board/vanessa.png"
+    },
+    {
+        "name": "Shanell Rincon",
+        "position": "Co-Social Chair",
+        "college": "Eighth",
+        "major": "Electrical Engineering",
+        "image": "/assets/board/shanell.png"
+    },
+    {
+        "name": "America Armenta",
+        "position": "Academic Chair",
+        "college": "Marshall",
+        "major": "Sociology",
+        "image": "/assets/board/america.png"
+    },
+    {
+        "name": "Sebastian Lomeli",
+        "position": "Co-Outreach Chair",
+        "college": "Muir",
+        "major": "Psychology spec. Social Psychology",
+        "image": "/assets/board/sebastian.png"
+    },
+    {
+        "name": "Elena Sanchez",
+        "position": "Co-Marketing Chair",
+        "college": "Muir",
+        "major": "Communications",
+        "image": "/assets/board/elena.png"
+    },
+    {
+        "name": "Tracy Alvarez",
+        "position": "Co-Marketing Chair",
+        "college": "Muir",
+        "major": "Global Health",
+        "image": "/assets/board/tracy.png"
+    }
+]
