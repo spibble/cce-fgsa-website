@@ -1,3 +1,10 @@
+---
+tags: 'pages'
+title: 'Frequently Asked Questions'
+tabtitle: 'FAQ | FGSA'
+navtitle: 'FAQ'
+order: 5
+---
 {% extends "layouts/base.html" %}
 {% block content %}
 
@@ -9,7 +16,7 @@
                 {% for q in questions %}
                     {% set title = q.question %}
                     {% set description = q.answer %}
-                    {% include "question.njk" %}
+                    {% include "components/question.njk" %}
                 {% endfor %}
         </section>
 
