@@ -1,15 +1,10 @@
 [
     {
-        "title": "End of Quarter Social",
-        "description": "description",
-        "image": null
+        "title": "First Stories Art Gallery",
+        "description": "An art gallery hosted completely by first-generation students! Students got to display their art and let their voices be heard, both through art and words.",
+        "image": "/assets/events/first_stories.png"
     },
-{
-        "title": "My First-Gen Story Night",
-        "description": "An open-mic event where students share their experiences navigating college as first-gen individuals. Whether it's poetry, a song, art, whatever it may be, come out and share your stories!",
-        "image": null
-    },
-{
+    {
         "title": "Beginning of Quarter GBM - Spring 2025",
         "description": "description",
         "image": null

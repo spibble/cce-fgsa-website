@@ -13,5 +13,10 @@
         "title": "First-Gen Fridays",
         "description": "A weekly engagement opportunity, such as a meal, social gathering, or a place to study together. Come out and get to meet new people! Food is typically provided during these events.",
         "image": null
+    },
+    {
+        "title": "Tabling",
+        "description": "FGSA and other first-gen communities (e.g. Triton Firsts) will often be out tabling on Library Walk or for events! Stop by our table and say hi, or learn more about our organization.",
+        "image": "/assets/events/tabling.png"
     }
 ]
