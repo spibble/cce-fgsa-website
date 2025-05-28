@@ -13,7 +13,7 @@
 		<header>
 			<div>
 				<img src="/assets/temp.png" alt="FGSA logo">
-				<text>First Generation Student Alliance</text>
+				<p id="title-text">First Generation Student Alliance</p>
 			</div>
 			
 			{% include "layouts/nav.njk" %}
@@ -32,7 +32,27 @@
 
 <!-- JS -->
 <script>
-	$(window).load(function() {
-		$("body").removeClass("preload");
+	document.addEventListener("DOMContentLoaded", () => {
+		document.body.classList.remove("preload");
+
+		const titleEl = document.getElementById("title-text");
+		const nav = document.getElementById("navbar");
+		const burger = nav.querySelector("a.icon");
+
+		function toggleTitle() {
+			if (window.innerWidth >= 1000) {
+				titleEl.textContent = "First Generation Student Alliance";
+			} else {
+				titleEl.textContent = "FGSA";
+			}
+		}
+
+		burger.addEventListener("click", (e) => {
+			e.preventDefault();
+			nav.classList.toggle("responsive");
+		});
+
+		toggleTitle();
+		window.addEventListener("resize", toggleTitle);
 	});
 </script>

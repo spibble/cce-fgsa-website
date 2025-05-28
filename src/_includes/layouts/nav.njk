@@ -1,5 +1,5 @@
 {% set currentUrl %}{{ page.url }}{% endset %}
-      <nav>
+      <nav id="navbar" class="base">
         <ul role="list">
           {% for page in collections.pages | sort(attribute='data.order') %}
           <li>
@@ -7,4 +7,5 @@
           </li>
           {%- endfor %}
         </ul>
+        <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
       </nav>
