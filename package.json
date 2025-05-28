@@ -24,5 +24,8 @@
   "homepage": "https://github.com/spibble/cce-fgsa-website#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "fullcalendar": "^6.1.17"
   }
 }

@@ -9,7 +9,7 @@ order: 4
 {% block content %}
 
         <section class="upcoming-events">
-            <h1>Upcoming Events</h1>
+            <article><h1>Upcoming Events</h1></article>
             <div class="event-calendar">
                 <iframe 
                     src="https://embed.styledcalendar.com/#o2wygZUuAe8nSk3svQ39" 
@@ -47,6 +47,17 @@ order: 4
 {% endblock %}
 
 <!-- Code -->
-<script>
+<script
     async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js">
+
+    window.addEventListener("resize", function () {
+    const container = document.getElementById("styled-calendar-container");
+    const iframe = container?.querySelector("iframe");
+
+    if (iframe && container) {
+      // Force iframe size to match container
+      iframe.style.height = container.scrollHeight + "px";
+      iframe.style.width = container.scrollWidth + "px";
+    }
+  });
 </script>

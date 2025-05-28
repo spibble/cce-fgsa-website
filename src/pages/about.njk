@@ -28,11 +28,13 @@ layout: 'layouts/page.njk'
 
         {{ experiences | markdown | safe }}
 
-        {% for e in experience %}
-            {% set title = '"' + e.experience + '"' %}
-            {% set description = "- " + e.name %}
-            {% set image = e.image %}
-            {% include "components/card.njk" %}
+        {% for b in board %}
+            {% if b.experience %}
+                {% set title = '"' + b.experience + '"' %}
+                {% set description = "- " + b.name + ", " + b.position %}
+                {% set image = b.image %}
+                {% include "components/card.njk" %}
+            {% endif %}
         {% endfor %}
 
         {{ core_values | markdown | safe }}

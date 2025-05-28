@@ -10,7 +10,9 @@ order: 6
 
         <section class="socials">
             <h1>Socials</h1>
-            <section class="card-grid">
+        </section>
+
+        <section class="card-grid">
                 {% for social in socials %}
                     {% set title = social.title %}
                     {% set description = social.description %}
@@ -20,7 +22,6 @@ order: 6
                     {% set alt = social.alt %}
                     {% include "components/tile.njk" %}
                 {% endfor %}
-            </section>
         </section>
 
         <section class="contact end">
