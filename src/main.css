@@ -580,36 +580,36 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-  nav.base ul {
-    display: none;
-    flex-direction: column;
-    text-align: right;
-    justify-content: right;
-    width: 100%;
-    background-color: #2B3980;
-    width: 100%;
-    padding: 0rem;
-    padding-right: 1rem;
-    margin: 0;
-    margin-top: 23.5rem;           
-    position: static;
-  }
+    nav.base ul {
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        justify-content: right;
+        width: 100%;
+        background-color: #2B3980;
+        width: 100%;
+        padding: 0rem;
+        padding-right: 1rem;
+        margin: 0;
+        margin-top: 23.5rem;           
+        position: static;
+    }
 
-  nav.base.responsive ul {
-    display: flex;
-    top: 60px;
-    background-color: #2B3980;
-  }
+    nav.base.responsive ul {
+        display: flex;
+        top: 60px;
+        background-color: #2B3980;
+    }
 
-  nav.base .icon {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    color: white;
-    z-index: 1000;
-  }
+    nav.base .icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        color: white;
+        z-index: 1000;
+    }
 }
 
 
