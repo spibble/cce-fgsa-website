@@ -9,9 +9,10 @@ order: 3
 {% extends "layouts/base.html" %}
 {% block content %}
 
-        <section>
-            <h1>Board Members</h1>
-            <section class="card-grid">
+        <section class="board">
+            <article><h1>Board Members</h1></article>
+
+            <section class="card-grid article">
                 {% for member in board %}
                     {% set name = member.name %}
                     {% set position = member.position %}

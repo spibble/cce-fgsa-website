@@ -98,6 +98,7 @@ article {
 h1 {
     font-size: 3rem;
     font-weight: bold;
+    margin-top: 0;
 }
 
 h2 {
@@ -158,9 +159,12 @@ section.faq {
 .socials {
     position: relative;
     padding-top: 60px;
-    padding-left: 10rem;
-    padding-right: 10rem;
+
     padding-bottom: 0px;
+}
+
+.board {
+    padding-top: 60px;
 }
 
 .socials h1 {
@@ -215,6 +219,7 @@ section.faq {
 
 section article {
     padding: 0;
+    padding-top: 3rem;
     margin-bottom: 0;
 }
 
@@ -315,6 +320,11 @@ section article {
     gap: 1rem;
     padding-top: 0;
     padding-left: 0;
+    padding-right: 0;
+}
+
+.card-grid.article {
+    padding: 0 0rem;
 }
 
 .card {
@@ -406,7 +416,7 @@ a.button:hover {
     .splash-text span {
         color: white;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: auto;
         text-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
     }   
@@ -426,11 +436,13 @@ a.button:hover {
     .card-grid {
         flex-direction: column;
         align-items: center;
+        gap: 0;
+        padding-left: 0;
     }
 
     .card {
         width: 90%;
-        padding: 2rem;
+        padding: 2rem 1rem;
     }
 
     .card-body {
@@ -487,12 +499,16 @@ a.button:hover {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     form label, input, textarea {
     font-size: 1rem;
     }
+
+    .card-grid.article {
+    padding: 0;
+}
 }
 
 .event {
@@ -524,7 +540,6 @@ a.button:hover {
     margin: auto;
     border: 0px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
-    margin-top: 3rem;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
