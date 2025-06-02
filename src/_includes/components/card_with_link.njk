@@ -1,0 +1,9 @@
+        <div 
+        class="event {% if loop.last %} last {% endif %}">
+            <div class="event-description">
+                <h2><a href={{ link }}>{{ title }}</a></h2>
+                <p>{{ description }}</p>
+            </div>
+
+            <img src="{{ image or '/assets/images/temp.png' }}" alt="{{ alt | default('Card image') }}">
+        </div>

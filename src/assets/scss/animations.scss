@@ -21,7 +21,28 @@
 }
 
 .splash-p1, .splash-p2, .splash-p3, .splash-b1, .splash-b2 {
-    opacity: 0;
     animation: splashText 0.7s forwards;
-    transform: translateZ(0);
+    opacity: 0%;
+}
+
+.splash-p1 {
+    animation-delay: 0.5s;
+}
+
+.splash-p2 {
+    display: inline-block;
+    animation-delay: 1s;
+}
+
+.splash-p3 {
+    animation-delay: 1.5s;
+}
+
+.splash-b1 {
+    display: inline-block;
+    animation-delay: 2.2s;
+}
+.splash-b2 {
+    display: inline-block;
+    animation-delay: 2.9s;
 }
