@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  background-color: #F4F3EF;
+  background-color: #2B3980;
 }
 body.preload {
   transition: none !important;
@@ -32,7 +32,7 @@ h2 {
 }
 @media screen and (max-width: 800px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -61,10 +61,7 @@ header {
   align-items: center;
   position: fixed;
   height: 60px;
-  width: auto;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   z-index: 1000;
   margin: 0;
   padding: 0 1rem;
@@ -84,7 +81,7 @@ header div img {
   height: 40px;
   margin: 0;
   padding: 0;
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 header div p {
   margin: 0;
@@ -94,7 +91,7 @@ nav {
   font-weight: bold;
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding-right: 2rem;
   /* elements containing the links */
   /* hover effects */
 }
@@ -116,7 +113,7 @@ nav li a {
 }
 nav .icon {
   display: none;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 @media (hover: hover) {
   nav li:hover {
@@ -184,6 +181,10 @@ footer p {
   padding-top: 60px;
 }
 
+.event-wrapper {
+  background-color: #F4F3EF;
+}
+
 .event-tabs {
   width: 100%;
   max-width: 800px;
@@ -192,10 +193,10 @@ footer p {
 
 .event-tab-list {
   display: flex;
-  flex-direction: row;
+  flex: 1 1 0;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   line-height: 5.3rem;
   margin-top: 3rem;
   padding: 0;
@@ -229,6 +230,13 @@ footer p {
 @media screen and (max-width: 800px) {
   .event-tab-list li a {
     font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .event-tab-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
   }
 }
 
@@ -336,29 +344,6 @@ footer p {
 .splash-text a.button:hover {
   background-color: #4657ad;
   color: white;
-}
-
-.splash-p1 {
-  animation-delay: 0.5s;
-}
-
-.splash-p2 {
-  display: inline-block;
-  animation-delay: 1s;
-}
-
-.splash-p3 {
-  animation-delay: 1.5s;
-}
-
-.splash-b1 {
-  display: inline-block;
-  animation-delay: 2.2s;
-}
-
-.splash-b2 {
-  display: inline-block;
-  animation-delay: 2.9s;
 }
 
 .card-grid {
@@ -648,9 +633,31 @@ form .text-input, form textarea {
   }
 }
 .splash-p1, .splash-p2, .splash-p3, .splash-b1, .splash-b2 {
-  opacity: 0;
   animation: splashText 0.7s forwards;
-  transform: translateZ(0);
+  opacity: 0%;
+}
+
+.splash-p1 {
+  animation-delay: 0.5s;
+}
+
+.splash-p2 {
+  display: inline-block;
+  animation-delay: 1s;
+}
+
+.splash-p3 {
+  animation-delay: 1.5s;
+}
+
+.splash-b1 {
+  display: inline-block;
+  animation-delay: 2.2s;
+}
+
+.splash-b2 {
+  display: inline-block;
+  animation-delay: 2.9s;
 }
 
 /*# sourceMappingURL=main.css.map */

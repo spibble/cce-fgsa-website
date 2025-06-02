@@ -15,6 +15,7 @@ order: 4
                 <li><a id="upcoming" href="#upcoming-events">Upcoming</a></li>
                 <li><a id="past" href="#past-events">Past Events</a></li>
                 <li><a id="generic" href="#generic-events">Typical Events</a></li>
+                <li><a id="other" href="#other-orgs">Other Orgs</a></li>
             </ul>
         </div>
 
@@ -57,6 +58,19 @@ order: 4
                 {% endfor %}
             </article>
         </section>
+
+        <section class="other-orgs" id="other-orgs">
+            <article>
+                <h2>Other Orgs</h2>
+                {% for org in other_orgs %}
+                    {% set title = org.title %}
+                    {% set link = org.link %}
+                    {% set description = org.description %}
+                    {% set image = org.image %}
+                    {% include "components/card_with_link.njk" %}
+                {% endfor %}
+            </article>
+        </section>
     </div>
 
 <!-- Script for events tabs functionality -->
@@ -65,7 +79,7 @@ order: 4
     const tabList = document.getElementById("event-tab-list");
     const tabButtons = tabList.querySelectorAll("a");
     const tabSections = document.querySelectorAll(
-        '.upcoming-events, .past-events, .generic-events'
+        '.upcoming-events, .past-events, .generic-events, .other-orgs'
     );
 
     // Accessibility stuff
