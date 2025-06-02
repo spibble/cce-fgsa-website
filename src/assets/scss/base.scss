@@ -1,0 +1,51 @@
+/* base/global styles like root, html, and body */
+@use 'variables' as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next");
+
+:root {
+    font-family: $font-main;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $background-light;
+
+    &.preload {
+        transition: none !important;
+    }
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1 { font-size: 3rem; font-weight: bold; }
+
+h2 { 
+    font-size: 2rem; 
+    font-weight: bold; 
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+h3 { font-size: 1.3rem; font-weight: bold; }
+
+p  { 
+    font-size: 1.3rem; 
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 1.1rem;
+    }
+}
+
+.debug {
+    border: 1px solid red;
+}

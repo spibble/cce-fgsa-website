@@ -1,0 +1,158 @@
+/* styles reusable on every page, such as header, nav, footer, etc. */
+@use 'variables' as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    height: 60px;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    margin: 0;
+    padding: 0 1rem;
+    background-color: $accent;
+
+    /* applied to FGSA logo and text */
+    div {
+        display: flex;
+        align-items: center;
+
+        font-size: 1.3rem;
+        text-align: center;
+
+        padding-left: 1.2rem;
+        color: $background;
+    }
+
+    /* applied to FGSA logo only */
+    div img {
+        height: 40px;
+
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+    }
+
+    div p {
+        margin: 0;
+    }
+}
+
+nav {
+    font-weight: bold;
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    ul { list-style-type: none; }
+
+    /* elements containing the links */
+    li {
+        display: inline-block;
+
+        height: 100%;
+
+        font-size: 1rem;
+        padding: 1rem;
+        transition: background-color 0.3s;
+
+        /* the actual links */
+        a {
+            text-decoration: none;
+            
+            color: $background;
+            
+            transition: color 0.3s;
+        }
+    }
+
+    .icon {
+        display: none;
+
+        padding: 0 1rem;
+    }
+
+    /* hover effects */
+    @media (hover: hover) {
+        li:hover {
+            background-color: $accent-light;
+        }
+
+        li a:hover {
+            color: white;
+        }
+    }
+}
+
+/* mobile layout */
+@media screen and (max-width: $breakpoint-mobile) {
+    .base {
+
+        /* default style */
+        ul {
+            display: none;
+            position: static;
+
+            flex-direction: column;
+            justify-content: right;
+            
+            width: 100%;
+
+            text-align: right;
+            margin: 0;
+            margin-top: 23.5rem;
+            padding: 0rem;
+            padding-right: 1rem;
+            background-color: $accent;
+        }
+
+        .icon {
+            display: block;
+            position: absolute;
+
+            top: 1rem;
+            right: 1rem;
+            z-index: 1000;
+
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        /* when burger is clicked */
+        &.responsive ul {
+            display: flex;
+            top: 60px;
+            background-color: $accent;
+        }
+    }
+}
+
+
+footer {
+    position: relative;
+
+    height: 40px;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: $accent;
+    color: $background;
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* sections at the top of each page */
+.top, .board, .socials, .upcoming-events, .faq {
+    padding-top: 60px;
+}

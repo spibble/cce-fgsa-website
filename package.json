@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "A website for the First Generation Student Alliance club at UCSD made for the second Core Assignment of CCE 3.",
   "main": ".eleventy.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx eleventy --serve",
-    "watch": "npx eleventy --watch",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
-    "build": "npx eleventy",
+    "watch:eleventy": "npx eleventy --serve",
+    "watch:sass": "sass --watch src/assets/scss/main.scss:src/main.css",
+    "watch": "npm-run-all watch:*",
+    "build:eleventy": "rm -r dist && npx eleventy",
+    "build:sass": "sass src/assets/scss/main.scss src/main.css",
+    "build": "npm-run-all build:*",
+    "start": "npm-run-all build:sass --parallel watch:*",
     "clean": "rm -r dist"
   },
   "repository": {
@@ -23,7 +26,9 @@
   },
   "homepage": "https://github.com/spibble/cce-fgsa-website#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.89.1"
   },
   "dependencies": {
     "fullcalendar": "^6.1.17"

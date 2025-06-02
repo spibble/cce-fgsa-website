@@ -1,6 +1,11 @@
 module.exports = function (config) {
-  config.addPassthroughCopy("./src/main.css");
-  config.addPassthroughCopy("./src/assets");
+  // Watch CSS files for changes
+  config.setBrowserSyncConfig({
+		files: './_site/css/**/*.css'
+	});
+
+  config.addPassthroughCopy("./src/assets/images");
+  config.addPassthroughCopy("./src/main.*");
 
   config.addFilter('markdown', function(value) {
     let markdown = require('markdown-it')({
