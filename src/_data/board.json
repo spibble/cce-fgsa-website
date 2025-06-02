@@ -4,7 +4,7 @@
         "position": "Co-President",
         "college": "Eighth",
         "major": "Undeclared-Physical Sciences",
-        "image": "/assets/board/lylian.png",
+        "image": "/assets/images/board/lylian.png",
         "experience": "Being first gen means accomplishing what was once impossible for my parents who didn't have the opportunity to pursue higher education and turning a dream into a reality."
     },
     {
@@ -12,42 +12,42 @@
         "position": "Co-President",
         "college": "Sixth",
         "major": "Bioengineering",
-        "image": "/assets/board/michelle.png"
+        "image": "/assets/images/board/michelle.png"
     },
     {
         "name": "Rosalyn Contreras",
         "position": "Vice President",
         "college": "Eighth",
         "major": "Public Health & Psychology",
-        "image": "/assets/board/rosalyn.png"
+        "image": "/assets/images/board/rosalyn.png"
     },
     {
         "name": "Linh Le",
         "position": "Secretary",
         "college": "Seventh",
         "major": "Pharmacological Chemistry",
-        "image": "/assets/board/linh.png"
+        "image": "/assets/images/board/linh.png"
     },
     {
         "name": "Yaling",
         "position": "Treasurer",
         "college": "Eighth",
         "major": "Business Economics",
-        "image": "/assets/board/yaling.png"
+        "image": "/assets/images/board/yaling.png"
     },
     {
         "name": "Vanessa",
         "position": "Co-Social Chair",
         "college": "Muir",
         "major": "Global Health",
-        "image": "/assets/board/vanessa.png"
+        "image": "/assets/images/board/vanessa.png"
     },
     {
         "name": "Shanell Rincon",
         "position": "Co-Social Chair",
         "college": "Eighth",
         "major": "Electrical Engineering",
-        "image": "/assets/board/shanell.png",
+        "image": "/assets/images/board/shanell.png",
         "experience": "Being first-gen to me means being able to share my story of how I got to where I am today. It's serving as representation and encouraging others so that they can be the first too."
     },
     {
@@ -55,7 +55,7 @@
         "position": "Academic Chair",
         "college": "Marshall",
         "major": "Sociology",
-        "image": "/assets/board/america.png",
+        "image": "/assets/images/board/america.png",
         "experience": "To me being a first-generation college student means being blessed with opportunity to represent my family and community in new spaces, such as a college institution."
     },
     {
@@ -63,7 +63,7 @@
         "position": "Co-Outreach Chair",
         "college": "Muir",
         "major": "Psychology spec. Social Psychology",
-        "image": "/assets/board/sebastian.png",
+        "image": "/assets/images/board/sebastian.png",
         "experience": "Being first-gen means I'm carving my own path, taking on challenges my family didn't face, but also honoring their sacrifices by working hard to create a better future."
     },
     {
@@ -71,13 +71,13 @@
         "position": "Co-Marketing Chair",
         "college": "Muir",
         "major": "Communications",
-        "image": "/assets/board/elena.png"
+        "image": "/assets/images/board/elena.png"
     },
     {
         "name": "Tracy Alvarez",
         "position": "Co-Marketing Chair",
         "college": "Muir",
         "major": "Global Health",
-        "image": "/assets/board/tracy.png"
+        "image": "/assets/images/board/tracy.png"
     }
 ]
