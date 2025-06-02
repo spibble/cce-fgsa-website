@@ -1,6 +1,119 @@
 @use 'variables' as *;
 
+// Events
+.event-tabs {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
 
+.event-tab-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    line-height: calc(1.3rem + 2rem * 2);
+    margin-top: 3rem;
+    padding: 0;
+
+    list-style-type: none;
+
+    // Tab buttons
+    li a {
+        text-decoration: none;
+
+        background-color: #2B3980;
+        color: #E3E2DD;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.5) 1px 0 20px;
+        
+        margin: 1rem;
+        padding: 1rem;
+        font-weight: bold;
+
+        font-size: 1.3rem;
+        text-decoration: none;
+        border-radius: 2rem;
+
+        transition: 0.3s;
+        transition-property: background-color, color;
+
+        // on hover
+        @media (hover: hover) {
+            &:hover {
+                background-color: #4657ad;
+                color: white;
+            }
+        }
+
+        // currently selected tab
+        &.active-tab {
+            background-color: #1d2655;
+            color: #a5a4a0;
+        }
+
+        // Mobile = smaller buttons
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.active-section {
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.event-wrapper-title {
+    padding-bottom: 0;
+}
+
+#styled-calendar-container {
+    position: relative;
+    width: fit-content;
+    height: auto;   
+}
+
+#styled-calendar-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    display: block;
+}
+
+.event-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.upcoming-events h1 {
+    margin-left: auto;
+    margin-right: auto;
+    animation: 0.6s ease-out 0s 1 loadContent;
+}
+
+.styled-calendar-container {
+    position: static;
+}
+
+
+.past-events {
+    position: relative;
+    
+}
+
+.generic-events {
+    position: relative;
+}
+
+// Splash section on home page
 
 .splash-img {
     background-image: url("/assets/images/comm_banner.jpg");
@@ -25,67 +138,6 @@
     z-index: 10;
 }
 
-
-.socials h1 {
-    animation: 0.6s ease-out 0s 1 loadContent;
-    margin-bottom: 0;
-}
-
-.contact {
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 0px;
-
-    @media screen and (max-width: $breakpoint-mobile) {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-.contact p {
-    margin-top: 0;
-}
-
-
-#styled-calendar-container {
-  position: relative;
-  width: fit-content;
-  height: auto;   
-}
-
-#styled-calendar-container iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: none;
-  display: block;
-}
-
-.event-calendar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.upcoming-events h1 {
-    margin-left: auto;
-    margin-right: auto;
-    animation: 0.6s ease-out 0s 1 loadContent;
-}
-
-.styled-calendar-container {
-    position: static;
-}
-
-
-.past-events {
-    position: relative;
-    top: 0px;
-}
-
-.generic-events {
-    position: relative;
-}
 
 .splash-text {
     color: white;
@@ -149,6 +201,8 @@
     display: inline-block;
     animation-delay: 2.9s;
 }
+
+// Tiles
 
 .card-grid {
     display: flex;
@@ -242,7 +296,7 @@ a.button:hover {
 }
 
 /* Responsive layout for small screens */
-@media (max-width: 800px) {
+@media (max-width: $breakpoint-mobile) {
     #styled-calendar-container iframe {
         width: 100% !important;
         height: 300px !important;
@@ -276,7 +330,6 @@ a.button:hover {
         min-height: auto;
     }
 
- 
     .card h2 {
         font-size: 1.5rem;
     }
@@ -312,7 +365,6 @@ a.button:hover {
 
     .past-events {
         margin: 0;
-        padding: 0;
     }
 
 
@@ -326,9 +378,9 @@ a.button:hover {
 .event {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
-    max-width: 60vw;
+    max-width: 80%;
     margin: auto;
     border: 0px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
@@ -336,12 +388,18 @@ a.button:hover {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+    .event-description {
+        padding-right: 1rem;
+        max-width: 100%;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            padding-right: 0;
+            margin-top: 1rem;
+        }
+    }
 }
 
-.event-description {
-    padding-right: 3rem;
-    max-width: 100%;
-}
 
 .event img {
     max-height: 200px;
@@ -359,4 +417,25 @@ a.button:hover {
 
 .question.bottom {
     margin-bottom: 0rem;
+}
+
+
+.socials h1 {
+    animation: 0.6s ease-out 0s 1 loadContent;
+    margin-bottom: 0;
+}
+
+.contact {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 0px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.contact p {
+    margin-top: 0;
 }

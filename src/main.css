@@ -153,7 +153,7 @@ nav .icon {
     right: 1rem;
     z-index: 1000;
     font-size: 1.5rem;
-    color: white;
+    color: #E3E2DD;
   }
   .base.responsive ul {
     display: flex;
@@ -180,48 +180,67 @@ footer p {
 }
 
 /* sections at the top of each page */
-.top, .board, .socials, .upcoming-events, .faq {
+.top, .board, .socials, .event-wrapper, .faq {
   padding-top: 60px;
 }
 
-.splash-img {
-  background-image: url("/assets/images/comm_banner.jpg");
-  background-size: cover;
-  background-position: center;
-  filter: brightness(90%);
-  height: 1500px;
-  max-height: 100svh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
+.event-tabs {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.event-tab-list {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  position: fixed;
-  position: relative;
-  top: 0;
-  z-index: 10;
+  justify-content: space-around;
+  line-height: 5.3rem;
+  margin-top: 3rem;
+  padding: 0;
+  list-style-type: none;
 }
-
-.socials h1 {
-  animation: 0.6s ease-out 0s 1 loadContent;
-  margin-bottom: 0;
+.event-tab-list li a {
+  text-decoration: none;
+  background-color: #2B3980;
+  color: #E3E2DD;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 0 20px;
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  transition: 0.3s;
+  transition-property: background-color, color;
 }
-
-.contact {
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-bottom: 0px;
+@media (hover: hover) {
+  .event-tab-list li a:hover {
+    background-color: #4657ad;
+    color: white;
+  }
+}
+.event-tab-list li a.active-tab {
+  background-color: #1d2655;
+  color: #a5a4a0;
 }
 @media screen and (max-width: 800px) {
-  .contact {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .event-tab-list li a {
+    font-size: 1.1rem;
   }
 }
 
-.contact p {
-  margin-top: 0;
+.active-section {
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.event-wrapper-title {
+  padding-bottom: 0;
 }
 
 #styled-calendar-container {
@@ -256,11 +275,29 @@ footer p {
 
 .past-events {
   position: relative;
-  top: 0px;
 }
 
 .generic-events {
   position: relative;
+}
+
+.splash-img {
+  background-image: url("/assets/images/comm_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(90%);
+  height: 1500px;
+  max-height: 100svh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  position: relative;
+  top: 0;
+  z-index: 10;
 }
 
 .splash-text {
@@ -466,7 +503,6 @@ a.button:hover {
   }
   .past-events {
     margin: 0;
-    padding: 0;
   }
   .card-grid.article {
     padding: 0;
@@ -475,8 +511,8 @@ a.button:hover {
 .event {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  max-width: 60vw;
+  justify-content: space-around;
+  max-width: 80%;
   margin: auto;
   border: 0px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 3rem;
@@ -485,10 +521,15 @@ a.button:hover {
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
-
-.event-description {
-  padding-right: 3rem;
+.event .event-description {
+  padding-right: 1rem;
   max-width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .event .event-description {
+    padding-right: 0;
+    margin-top: 1rem;
+  }
 }
 
 .event img {
@@ -507,6 +548,27 @@ a.button:hover {
 
 .question.bottom {
   margin-bottom: 0rem;
+}
+
+.socials h1 {
+  animation: 0.6s ease-out 0s 1 loadContent;
+  margin-bottom: 0;
+}
+
+.contact {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 800px) {
+  .contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.contact p {
+  margin-top: 0;
 }
 
 /* styles for page content containers and forms */
