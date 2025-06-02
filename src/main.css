@@ -153,7 +153,7 @@ nav .icon {
     right: 1rem;
     z-index: 1000;
     font-size: 1.5rem;
-    color: white;
+    color: #E3E2DD;
   }
   .base.responsive ul {
     display: flex;
@@ -180,8 +180,67 @@ footer p {
 }
 
 /* sections at the top of each page */
-.top, .board, .socials, .upcoming-events, .faq {
+.top, .board, .socials, .event-wrapper, .faq {
   padding-top: 60px;
+}
+
+.event-tabs {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.event-tab-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 5.3rem;
+  margin-top: 3rem;
+  padding: 0;
+  list-style-type: none;
+}
+.event-tab-list li a {
+  text-decoration: none;
+  background-color: #2B3980;
+  color: #E3E2DD;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 0 20px;
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  transition: 0.3s;
+  transition-property: background-color, color;
+}
+@media (hover: hover) {
+  .event-tab-list li a:hover {
+    background-color: #4657ad;
+    color: white;
+  }
+}
+.event-tab-list li a.active-tab {
+  background-color: #1d2655;
+  color: #a5a4a0;
+}
+@media screen and (max-width: 800px) {
+  .event-tab-list li a {
+    font-size: 1rem;
+  }
+}
+
+.active-section {
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.event-wrapper-title {
+  padding-bottom: 0;
 }
 
 .splash-img {
@@ -256,7 +315,6 @@ footer p {
 
 .past-events {
   position: relative;
-  top: 0px;
 }
 
 .generic-events {
@@ -466,7 +524,6 @@ a.button:hover {
   }
   .past-events {
     margin: 0;
-    padding: 0;
   }
   .card-grid.article {
     padding: 0;
@@ -475,7 +532,7 @@ a.button:hover {
 .event {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   max-width: 60vw;
   margin: auto;
   border: 0px solid rgba(0, 0, 0, 0.1);
@@ -485,10 +542,15 @@ a.button:hover {
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
-
-.event-description {
-  padding-right: 3rem;
+.event .event-description {
+  padding-right: 1rem;
   max-width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .event .event-description {
+    padding-right: 0;
+    margin-top: 1rem;
+  }
 }
 
 .event img {

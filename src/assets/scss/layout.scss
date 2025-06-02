@@ -122,7 +122,7 @@ nav {
             z-index: 1000;
 
             font-size: 1.5rem;
-            color: white;
+            color: $background;
         }
 
         /* when burger is clicked */
@@ -158,6 +158,6 @@ footer {
 }
 
 /* sections at the top of each page */
-.top, .board, .socials, .upcoming-events, .faq {
+.top, .board, .socials, .event-wrapper, .faq {
     padding-top: 60px;
 }

@@ -8,22 +8,35 @@ order: 4
 {% extends "layouts/base.html" %}
 {% block content %}
 
-        <section class="upcoming-events">
-            <article><h1>Upcoming Events</h1></article>
-            <div class="event-calendar">
-                <iframe 
-                    src="https://embed.styledcalendar.com/#o2wygZUuAe8nSk3svQ39" 
-                    title="FGSA Event Calendar" 
-                    class="styled-calendar-container" 
-                    style="width: 80%; height: 660px; border: none;" 
-                    data-cy="calendar-embed-iframe"
-                ></iframe>
-            <div>
+    <div class="event-wrapper">
+        <article class="event-wrapper-title"><h1>Events</h1></article>
+        <div id="event-container" class="event-tabs">
+            <ul id= "event-tab-list" class="event-tab-list">
+                <li><a id="upcoming" href="#upcoming-events">Upcoming</a></li>
+                <li><a id="past" href="#past-events">Past Events</a></li>
+                <li><a id="generic" href="#generic-events">Typical Events</a></li>
+            </ul>
+        </div>
+
+        <section class="upcoming-events" id="upcoming-events">
+            <article>
+                <h2>Upcoming Events</h2>
+                    <div class="event-calendar">
+                        <iframe 
+                            src="https://embed.styledcalendar.com/#o2wygZUuAe8nSk3svQ39" 
+                            title="FGSA Event Calendar" 
+                            class="styled-calendar-container" 
+                            style="width: 80%; height: 660px; border: none;" 
+                            data-cy="calendar-embed-iframe"
+                        ></iframe>
+                    <div>
+            </article>
+            
         </section>
 
-        <section class="past-events">
+        <section class="past-events" id="past-events">
             <article>
-                <h1>Past Events</h1>
+                <h2>Past Events</h2>
                 {% for event in past_events %}
                     {% set title = event.title %}
                     {% set description = event.description %}
@@ -33,9 +46,9 @@ order: 4
             </article>
         </section>
 
-        <section class="generic-events">
+        <section class="generic-events" id="generic-events">
             <article>
-                <h1>Typical Events</h1>
+                <h2>Typical Events</h2>
                 {% for event in generic_events %}
                     {% set title = event.title %}
                     {% set description = event.description %}
@@ -44,20 +57,73 @@ order: 4
                 {% endfor %}
             </article>
         </section>
-{% endblock %}
+    </div>
 
-<!-- Code -->
-<script
-    async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js">
+<!-- Script for events tabs functionality -->
+<script>
+    const tabContainer = document.getElementById("event-container");
+    const tabList = document.getElementById("event-tab-list");
+    const tabButtons = tabList.querySelectorAll("a");
+    const tabSections = document.querySelectorAll(
+        '.upcoming-events, .past-events, .generic-events'
+    );
 
-    window.addEventListener("resize", function () {
-    const container = document.getElementById("styled-calendar-container");
-    const iframe = container?.querySelector("iframe");
+    // Accessibility stuff
+    tabList.setAttribute("role", "tablist");
+    tabSections.forEach((section) => {
+        section.setAttribute("tabindex", 0);
+    })
 
-    if (iframe && container) {
-      // Force iframe size to match container
-      iframe.style.height = container.scrollHeight + "px";
-      iframe.style.width = container.scrollWidth + "px";
+    // By default, first tab should be the visible one
+    tabButtons.forEach((tab, index) => {
+        tab.setAttribute("role", "tab");
+        if (index === 0) {
+            tab.classList.add("active-tab");
+            tabSections[index].querySelector("article").classList.add("active-section");
+        }
+        else {
+            tab.setAttribute("tabindex", -1);
+            tabSections[index].setAttribute("hidden", true);
+        }
+    })
+
+    /* HELPERS */
+
+    // Switch active tab to be the one the user clicked on
+    function switchTab(clickedTab) {
+        const activeSectionId = clickedTab.getAttribute("href");
+        const activeSection = document.querySelector(activeSectionId);
+
+        tabSections.forEach((section) => {
+            if (section === activeSection) {
+                section.removeAttribute("hidden");
+                section.querySelector("article").classList.add("active-section");
+                clickedTab.classList.add("active-tab");
+            }
+            else {
+                section.setAttribute("hidden", true);
+                section.querySelector("article").classList.remove("active-section");
+                section.classList.remove("active-section");
+                
+                tabButtons.forEach((button) => {
+                    if (button != clickedTab) {
+                        button.classList.remove("active-tab");
+                    }
+                })
+            }
+        })
     }
-  });
+
+    /* MAIN FUNCTIONALITY */
+
+    // Listen to click events on the tabs
+    tabContainer.addEventListener("click", (e) => {
+        const clickedTab = e.target.closest("a");
+
+        if (!clickedTab) { return; }
+        e.preventDefault();
+        switchTab(clickedTab);
+    });
+
 </script>
+{% endblock %}
