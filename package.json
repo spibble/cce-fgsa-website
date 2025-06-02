@@ -8,11 +8,11 @@
     "watch:eleventy": "npx eleventy --serve",
     "watch:sass": "sass --watch src/assets/scss/main.scss:src/main.css",
     "watch": "npm-run-all watch:*",
-    "build:eleventy": "rm -r dist && npx eleventy",
+    "build:eleventy": "rm -rf dist && npx eleventy",
     "build:sass": "sass src/assets/scss/main.scss src/main.css",
     "build": "npm-run-all build:*",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "clean": "rm -r dist"
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
