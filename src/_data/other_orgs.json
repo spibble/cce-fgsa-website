@@ -3,18 +3,18 @@
         "title": "OASIS",
         "description": "OASIS provides lots of programming for academic support, such as study jams and tutoring sessions, as well as professional support and promoting cultural heritage.",
         "link": "https://oasis.ucsd.edu",
-        "image": null
+        "image": "/assets/images/orgs/oasis.png"
     },
     {
         "title": "Community Resource Centers",
         "description": "There are many community resource centers on campus dedicated to serving specific cultures or identities. Each of them have their own programming and/or calendars to highlight other important events and deadlines.",
         "link": "https://grad.ucsd.edu/student-life/health-wellbeing/community-resource-centers",
-        "image": null
+        "image": "/assets/images/orgs/comm_rcs.jpg"
     },
     {
         "title": "UCSD Triton Firsts Initiative",
-        "description": "UCSD has an official first-generation initiative, and many of the resources and events they have are shared with us.",
+        "description": "UCSD has an official first-generation initiative, and many of the resources and events they have are shared with us! We encourage you to check them out and engage with them directly as well.",
         "link": "https://srs.ucsd.edu/initiatives/triton-firsts",
-        "image": null
+        "image": "/assets/images/orgs/tritonfirsts.png"
     }
 ]
