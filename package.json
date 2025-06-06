@@ -10,7 +10,8 @@
     "watch": "npm-run-all watch:*",
     "build:eleventy": "rm -rf dist && npx eleventy",
     "build:sass": "sass src/assets/scss/main.scss src/main.css",
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all build:eleventy build:sass",
+    "build:gh-pages": "npx eleventy --pathprefix=cce-fgsa-website",
     "start": "npm-run-all build:sass --parallel watch:*",
     "clean": "rm -rf dist"
   },

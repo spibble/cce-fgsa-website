@@ -23,7 +23,7 @@
             run: npm install
 
           - name: Build Eleventy site
-            run: npm run build
+            run: npm run build:gh-pages
 
           - name: Deploy
             uses: peaceiris/actions-gh-pages@v4

@@ -1,9 +1,9 @@
-module.exports = function (config) {
-  // Watch CSS files for changes
+module.exports = async function (config) {
+  const { HtmlBasePlugin } = await import("@11ty/eleventy");
+
   config.setBrowserSyncConfig({
 		files: './_site/css/**/*.css'
 	});
-
   
   config.addPassthroughCopy("./src/assets/images");
   config.addPassthroughCopy("./src/main.*");
@@ -15,11 +15,12 @@ module.exports = function (config) {
     return markdown.render(value);
   });
 
+  config.addPlugin(HtmlBasePlugin);  
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
-
     pathPrefix: "/cce-fgsa-website/",
 
     dir: {
