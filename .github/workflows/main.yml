@@ -23,7 +23,7 @@
             run: npm run build
 
           - name: Deploy to gh-pages
-            uses: peaceiris/actions-gh-pages@v6
+            uses: peaceiris/actions-gh-pages@v4
             with:
               publish_dir: ./dist
               branch: gh-pages
