@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+		<title>Home | FGSA</title>
+	</head>
+
+	<body class="preload">
+		<header>
+			<div>
+				<img src="/assets/images/temp.png" alt="FGSA logo">
+				<p id="title-text">First Generation Student Alliance</p>
+			</div>
+			
+			
+      <nav id="navbar" class="base">
+        <ul role="list">
+          
+          <li>
+            <a aria-current="page" href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/board/">Board</a>
+          </li>
+          <li>
+            <a href="/events/">Events</a>
+          </li>
+          <li>
+            <a href="/faq/">FAQ</a>
+          </li>
+          <li>
+            <a href="/contact/">Contact</a>
+          </li>
+        </ul>
+        <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
+      </nav>
+		</header>
+		
+
+        <section class="splash-img">
+            <div class="splash-text">
+                <p class="splash-p1">We are the</p>
+                <span class="splash-p2">First Generation Student Alliance</span>
+                <p class="splash-p3">at UC San Diego.</p>
+
+                <a class="button splash-b1" href="about/">Learn More</a>
+            </div>
+        </section>
+
+        <section class="card-grid">
+            
+                
+                
+                
+                
+                
+                
+                
+                        <div class="card">
+            <i class="fa-solid fa-users-viewfinder"></i>
+            <!-- <img src="" alt="Card image"> -->
+            <div class="card-body">
+                <h2>Our Mission</h2>
+                <p>Learn what we&#39;re all about!</p>
+            </div>
+
+            
+            <a href="/about/" class="button">Learn More</a>
+            
+        </div>
+            
+                
+                
+                
+                
+                
+                
+                
+                        <div class="card">
+            <i class="fa-solid fa-calendar-days"></i>
+            <!-- <img src="" alt="Card image"> -->
+            <div class="card-body">
+                <h2>Our Events</h2>
+                <p>See what&#39;s coming up this quarter.</p>
+            </div>
+
+            
+            <a href="/events/" class="button">Upcoming Events</a>
+            
+        </div>
+            
+                
+                
+                
+                
+                
+                
+                
+                        <div class="card">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <!-- <img src="" alt="Card image"> -->
+            <div class="card-body">
+                <h2>Get in Touch</h2>
+                <p>Want to join us, or collaborate?</p>
+            </div>
+
+            
+            <a href="/contact/" class="button">Contacts &amp; Socials</a>
+            
+        </div>
+            
+                
+                
+                
+                
+                
+                
+                
+                        <div class="card">
+            <i class="fa-solid fa-circle-question"></i>
+            <!-- <img src="" alt="Card image"> -->
+            <div class="card-body">
+                <h2>Questions?</h2>
+                <p>We have answers.</p>
+            </div>
+
+            
+            <a href="/faq/" class="button">View our FAQ</a>
+            
+        </div>
+            
+        </section>
+
+	</body>
+
+	<footer>
+		<p>&copy; 2025 First Generation Student Alliance @ UCSD</p>
+	</footer>
+</html>
+
+<!-- JS -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		document.body.classList.remove("preload");
+
+		const titleEl = document.getElementById("title-text");
+		const nav = document.getElementById("navbar");
+		const burger = nav.querySelector("a.icon");
+
+		function toggleTitle() {
+			if (window.innerWidth >= 1000) {
+				titleEl.textContent = "First Generation Student Alliance";
+			} else {
+				titleEl.textContent = "FGSA";
+			}
+		}
+
+		burger.addEventListener("click", (e) => {
+			e.preventDefault();
+			nav.classList.toggle("responsive");
+		});
+
+		toggleTitle();
+		window.addEventListener("resize", toggleTitle);
+	});
+</script>

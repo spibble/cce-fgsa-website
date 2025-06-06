@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+		<title>FAQ | FGSA</title>
+	</head>
+
+	<body class="preload">
+		<header>
+			<div>
+				<img src="/assets/images/temp.png" alt="FGSA logo">
+				<p id="title-text">First Generation Student Alliance</p>
+			</div>
+			
+			
+      <nav id="navbar" class="base">
+        <ul role="list">
+          
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/board/">Board</a>
+          </li>
+          <li>
+            <a href="/events/">Events</a>
+          </li>
+          <li>
+            <a aria-current="page" href="/faq/">FAQ</a>
+          </li>
+          <li>
+            <a href="/contact/">Contact</a>
+          </li>
+        </ul>
+        <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
+      </nav>
+		</header>
+		
+
+        <section class="faq">
+            <article>
+                <h1>Frequently Asked Questions</h1>
+            </article>
+            
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: Do I need to consider myself first-generation to be part of the organization?</h2>
+            <p>A: No - the organization is open to everyone! Our events are mainly geared towards first-generation college students or first-generation international students, but everyone&#39;s backgrounds and perspectives are welcome.</p>
+        </div>
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: How do I know I am a first-generation student?</h2>
+            <p>A: UCSD defines first-generation students as those with with neither parent having a four-year college degree. However, this definition doesn&#39;t tell the full story; you can also be first-gen in the international sense or even other senses! &quot;First-Generation&quot; can be a complex identity, and generally speaking, if you are doing or pursuing something that noone of your family has done before, then that makes you first-generation.</p>
+        </div>
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: How can I succeed?</h2>
+            <p>A: There are a lot of resources on campus that can help you out! For academic support, you can utilize resources like OASIS or SI to get extra help with writing, math, and science courses. You can also take a look at some of our past events or UCSD&#39;s FirstGen events to see potential ways to get other types of support.</p>
+        </div>
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: Where can I go for help?</h2>
+            <p>A: Similar to the previous question, for academic help, check out academic resources like OASIS or SI. For professional support, OASIS provides some professional resources too. For identity-based support, there are plenty of resource centers on campus. For mental health support, CAPS is free of charge to students! And of course, you can also reach out to us, join our Discord, and participate in events to get help from fellow first-gen students!</p>
+        </div>
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: How can I connect with a mentor?</h2>
+            <p>A: There are a few different mentorship programs on campus, such as the Mentor Collective. If you are an incoming first-year student, try programs like Summer Bridge or SPIS which are designed to provide mentorship &amp; community and serve historically underrepresented groups. In the future, we would also like to run our own year-long mentor/mentee program as well!</p>
+        </div>
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: How does mentorship work?</h2>
+            <p>A: Mentorship can be complicated, but at its core, a mentor is someone who is a friend and a familiar face around campus, but also one that you can go to for support. As a mentee, you should try to learn a lot from your mentor and get comfortable asking for help when you need it. As a mentor, you need to be there for your mentee(s) and be the one providing help in times of need.</p>
+        </div>
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: How can I contact any board member?</h2>
+            <p>A: You can get in touch with board members by messaging us on Instagram or reaching out through email! If you want to talk to a specific board member, be sure to let us know which one! We are available to contact on our Discord server as well.</p>
+        </div>
+                
+                    
+                    
+                            <div class="question">
+            <h2>Q: How to get involved?</h2>
+            <p>A: Reach out to us on Instagram (@ucsdfgsa) or through email (fgsa@ucsd.edu), join our Discord server, and pull up to events! We hope to see you soon :)</p>
+        </div>
+                
+        </section>
+
+
+	</body>
+
+	<footer>
+		<p>&copy; 2025 First Generation Student Alliance @ UCSD</p>
+	</footer>
+</html>
+
+<!-- JS -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		document.body.classList.remove("preload");
+
+		const titleEl = document.getElementById("title-text");
+		const nav = document.getElementById("navbar");
+		const burger = nav.querySelector("a.icon");
+
+		function toggleTitle() {
+			if (window.innerWidth >= 1000) {
+				titleEl.textContent = "First Generation Student Alliance";
+			} else {
+				titleEl.textContent = "FGSA";
+			}
+		}
+
+		burger.addEventListener("click", (e) => {
+			e.preventDefault();
+			nav.classList.toggle("responsive");
+		});
+
+		toggleTitle();
+		window.addEventListener("resize", toggleTitle);
+	});
+</script>
