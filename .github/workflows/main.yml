@@ -5,7 +5,7 @@
 
     on:
       push:
-        branches: [main] # or your main branch
+        branches: [main]
 
     jobs:
       build_and_deploy:
