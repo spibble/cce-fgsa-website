@@ -4,6 +4,7 @@ module.exports = function (config) {
 		files: './_site/css/**/*.css'
 	});
 
+  
   config.addPassthroughCopy("./src/assets/images");
   config.addPassthroughCopy("./src/main.*");
 
@@ -18,6 +19,8 @@ module.exports = function (config) {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
+
+    pathPrefix: "/cce-fgsa-website/",
 
     dir: {
       input: 'src',
