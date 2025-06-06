@@ -21,7 +21,6 @@ module.exports = async function (config) {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
-    pathPrefix: "/cce-fgsa-website/",
 
     dir: {
       input: 'src',
