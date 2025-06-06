@@ -1,5 +1,8 @@
     name: Deploy Eleventy Site
 
+    permissions:
+      contents: write
+
     on:
       push:
         branches: [main] # or your main branch
@@ -25,5 +28,5 @@
           - name: Deploy
             uses: peaceiris/actions-gh-pages@v4
             with:
-                github_token: ${{ secrets.GITHUB_TOKEN }}
-                publish_dir: ./dist
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./dist
