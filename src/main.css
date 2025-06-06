@@ -290,7 +290,7 @@ footer p {
 }
 
 .splash-img {
-  background-image: url("/assets/images/comm_banner.jpg");
+  background-image: url("assets/images/comm_banner.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(90%);
