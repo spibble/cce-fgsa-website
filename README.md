@@ -6,11 +6,14 @@ A (mock) website for the First Generation Student Alliance club at UCSD. This wa
 </div>
 
 ## 🌐 Visit
-If the badge below is green, then the project is currently being hosted on https://fgsa-at-ucsd.netlify.app. Feel free to pay it a visit!
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/df62fd8d-1039-4669-b6cf-d3344d43da5d/deploy-status)](https://app.netlify.com/sites/fgsa-at-ucsd/deploys)
 
-If the badge above is not green, and/or the website is not being hosted, you can still clone the repo and serve it locally if you wanna check it out! To do so, you can follow these steps:
+This website is being dually hosted on Netlify and on my website! 
+- If the badge above is green, the the site is live on Netlify at https://fgsa-at-ucsd.netlify.app.
+- Alternatively (and this one should always be up), you can visit it at https://spibble.site/cce-fgsa-website/.
+
+If you want to view or work on it locally, you can follow these steps to set up a dev environment:
 
 1. Clone the repository into a directory of your choosing:
 ```
@@ -33,7 +36,7 @@ npm run start
 | [Eleventy](https://www.11ty.dev)                | Static site generation, project structure   |
 | [Nunjucks](https://mozilla.github.io/nunjucks/) | Page & component templating language        |
 | [SCSS](https://sass-lang.com)                   | Styling language (it's just CSS but nicer)  |
-| JavaScript                                      | Extra responsiveness, interactive elements  |
+| JavaScript                                      | Extra responsiveness, interaction, configs  |
 | [Netlify](https://www.netlify.com)              | "Backend" to host the website remotely      |
 
 ## 📁 Project Structure
