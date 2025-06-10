@@ -1,6 +1,10 @@
 @use 'variables';
 @use 'base';
 @use 'layout';
-@use 'components';
+
+@use 'components/tile';
+@use 'components/event';
+@use 'components/misc_components';
+
 @use 'pages';
 @use 'animations';
